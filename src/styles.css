@@ -1,0 +1,174 @@
+:root {
+  --primary__backgroundColor: #21c08b;
+  --secondary__backgroundColor: #8f57fd;
+  --gradient: linear-gradient(to bottom, #21c08b, #8f57fd);
+  --input__backgroundColor: rgba(255, 255, 255, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Mulish", sans-serif;
+}
+input {
+  outline: none;
+}
+.header {
+  background-color: var(--primary__backgroundColor);
+  max-height: 80px;
+}
+.logo {
+  display: block;
+  width: 228px;
+  text-align: center;
+  margin: 0 auto;
+}
+.container {
+  background: var(--gradient);
+  height: 464px;
+}
+.form__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form__title {
+  color: white;
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 3.4rem;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form__input {
+  display: block;
+  min-width: 214px;
+  min-height: 42px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  margin-top: 28px;
+  transition-timing-function: ease;
+}
+.form__input::placeholder {
+  color: white;
+}
+.form__input:hover {
+  background-color: var(--input__backgroundColor);
+}
+.form__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 215px;
+  height: 38px;
+  background-color: var(--input__backgroundColor);
+  border-radius: 30px;
+  border: 1px solid white;
+  margin-top: 28px;
+  color: white;
+  font-size: 1.6rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+.form__button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.form__options {
+  display: inline-flex;
+  justify-content: space-between;
+  max-width: 273px;
+  font-size: 1.2rem;
+  margin-top: 14px;
+}
+.form__checkbox {
+  color: white;
+}
+.form__recuperationLink {
+  color: white;
+  text-decoration: none;
+}
+.form__recuperationLink:hover {
+  text-decoration: underline;
+}
+.otherLongIn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 47px;
+}
+.otherLongIn__item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 1.6rem;
+  width: 175px;
+  margin-bottom: 10px;
+}
+.google_icon {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-image: url(/assets/icons/icons8-google-plus-50.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.twitter__icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url(/assets/icons/icons8-twitter-50.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.otherLongIn__link {
+  color: white;
+  text-decoration: none;
+}
+.otherLongIn__link:hover {
+  text-decoration: underline;
+}
+.signUp {
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+  font-size: 1.4rem;
+  margin-top: 38px;
+}
+.signUp a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.signUp a:hover {
+  text-decoration: underline;
+}
+.footer {
+  height: 7vh;
+  background-color: var(--secondary__backgroundColor);
+}
+.footer__list {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+}
+.footer__item {
+  list-style: none;
+  padding-bottom: 5px;
+}
+.footer__item a {
+  color: white;
+  text-decoration: none;
+}
+.footer__item a:hover {
+  text-decoration: underline;
+}
