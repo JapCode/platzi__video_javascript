@@ -36,21 +36,33 @@ input {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  cursor: pointer;
 }
 .menu__nav {
+  /* padding: 15px; */
   position: absolute;
-  display: none;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(3, 68px);
+  grid-template-rows: repeat(3, 1fr);
   top: 0;
-  right: 0;
+  right: -250px;
   width: 204px;
   height: 250px;
   background: var(--gradient);
+  transition: 0.2s;
+  color: white;
+  font-size: 14px;
+  z-index: 2;
+}
+.is-active {
+  right: 0;
 }
 .menu__top {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 68px);
   align-items: center;
+  justify-items: center;
+  grid-column: 1 / span 3;
 }
 .cancel__button {
   display: block;
@@ -60,17 +72,52 @@ input {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  cursor: pointer;
 }
 .menu__container {
   position: relative;
   height: 49px;
+  justify-self: center;
+  align-self: center;
+  align-items: center;
+  grid-column: 2 / 3;
 }
 .menu__list {
   list-style: none;
   position: absolute;
-  right: calc(50% - 35px);
+  right: calc(50% - 37px);
   top: 0;
   display: block;
+  width: 73px;
+}
+.menu__item {
+  margin: 10px auto;
+  text-align: center;
+}
+.menu__item a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.menu__item a:hover {
+  text-decoration: underline;
+}
+.menuBottomlist {
+  font-size: 1rem;
+  /* margin-top: 47px; */
+  list-style: none;
+  grid-column: 1 / span 3;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+}
+.menuBottom__item a {
+  text-decoration: none;
+  color: white;
+}
+
+.menuBottom__item a:hover {
+  text-decoration: underline;
 }
 .container {
   background-color: var(--secondary__backgroundColor);
