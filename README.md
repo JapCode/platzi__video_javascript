@@ -1,3 +1,3 @@
-# platzi video javascritp
+# platzi video javascript
 
-practice for the course of frontend Frontend Developer on Platzi
+practice for the course of  Frontend Developer on Platzi
